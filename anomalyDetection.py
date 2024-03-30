@@ -10,7 +10,7 @@ def anomaly_detection(packets, threshold):
         packet_length = len(packet)
         print(f"Packet Length: {packet_length}")
         if packet_length > threshold:
-            anomalies.append(packet)
+            anomalies.append(str(packet))
     return anomalies
 
 # Example usage:
@@ -23,4 +23,6 @@ detected_anomalies = anomaly_detection(captured_packets, threshold_size)
 
 print(f"Total packets captured: {len(captured_packets)}")
 print(f"Anomalies detected: {len(detected_anomalies)}")
-print(detected_anomalies)
+
+for anomaly in detected_anomalies:
+    print(anomaly)

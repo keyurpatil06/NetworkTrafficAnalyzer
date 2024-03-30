@@ -7,6 +7,7 @@ def packet_capture(interface, count):
 def protocol_analysis(packets):
     protocol_count = {}
     for packet in packets:
+        print("packet:",packet)
         # Check if the packet has the IP layer
         if IP in packet:
             protocol = packet[IP].proto

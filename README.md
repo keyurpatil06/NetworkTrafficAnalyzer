@@ -26,7 +26,7 @@ python test.py
 After identifying your interface name, you can run the main scripts for packet capture, protocol analysis, anomaly detection, and traffic logging.
 
 ```bash
-python packetCapture.py
+python packetCapture.py 
 
 python protocolAnalysis.py
 
